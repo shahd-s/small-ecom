@@ -18,9 +18,12 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
-      ],
-      "scripts": [],
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css"
+        ],
+      "scripts": [
+        "../node_modules/bootstrap/dist/js/bootstrap.js"
+        ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

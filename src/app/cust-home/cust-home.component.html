@@ -1,0 +1,38 @@
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<div class="panel panel-default panel-order">
+  <div class="panel-heading">
+      <strong>Order history for {{custinf.cust.first_name}} {{custinf.cust.last_name}} (Status: {{custinf.cust.status}})</strong>
+       <strong>{{noOrders}}</strong>
+  </div>
+ 
+
+  <div class="panel-body">
+	<div class="row" *ngFor=" let product of products" >
+	<div class="col-md-1"><img src="https://bootdey.com/img/Content/user_3.jpg" class="media-object img-thumbnail"></div>
+	<div class="col-md-11">
+	  <div class="row">
+		<div class="col-md-12">
+			<span><strong>Item: </strong></span> <span class="label label-info">{{product.productName}}</span><br>
+		  
+		  <span><strong>Order Number: </strong></span> <span class="label label-info">{{product.productOrders[0].orderNumber}}</span><br>
+		  Quantity : 1, cost: {{product.price}} <br>
+		  <a data-placement="top" class="btn btn-success btn-xs glyphicon glyphicon-ok" href="#" title="View"></a>
+		  <a data-placement="top" class="btn btn-danger  btn-xs glyphicon glyphicon-trash" href="#" title="Danger"></a>
+		  <a data-placement="top" class="btn btn-info  btn-xs glyphicon glyphicon-usd" href="#" title="Danger"></a>
+		</div>
+		<div class="col-md-12">
+		  order made by <a href="#">{{custinf.cust.userName}}</a>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+
+</div>
+<div class="panel-footer"></div>  
+</div>
+   
+    
+
+ 
+
