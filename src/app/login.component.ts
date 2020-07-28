@@ -47,7 +47,7 @@ constructor( private router: Router, private ser: WebService){
     this.ser.logIn(this.usernamee,this.passwordd).subscribe(async res=>{
       
     if(res.text() == "fail")
-    console.log("ha. loser") //potentially redirect to login failed
+    console.log("Login Failed") //potentially redirect to login failed
     else
     {
     
